@@ -1,3 +1,4 @@
+//Gère navigation entr écrans en fct de présence dun token user
 import React, { useState, useEffect } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -24,7 +25,12 @@ const AppNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         {userToken ? (
+          <>
           <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="ObjectDetail" component={ObjectDetailScreen} />
+          <Stack.Screen name="AddObject" component={AddObjectScreen} />
+          <Stack.Screen name="EditObject" component={AddObjectScreen} />
+          </>
         ) : (
           <Stack.Screen name="Auth" component={AuthScreen} />
         )}

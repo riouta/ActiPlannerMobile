@@ -1,0 +1,2 @@
+android/.gradle/** filter=lfs diff=lfs merge=lfs -text
+android/.gradle/8.6/dependencies-accessors/423f0288fa7dffe069445ffa4b72952b4629a15a/classes/org/gradle/accessors/dm/LibrariesForLibs.class/** filter=lfs diff=lfs merge=lfs -text
